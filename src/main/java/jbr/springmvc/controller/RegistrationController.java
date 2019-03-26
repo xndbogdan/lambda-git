@@ -31,7 +31,7 @@ public class RegistrationController {
 
     User user_check = userService.checkExistance(user);
     ModelAndView mav = null;
-    if (null != user) {
+    if (null != user_check) {
       mav = new ModelAndView("register");
       mav.addObject("message", "This user already exists!");
       return mav;
