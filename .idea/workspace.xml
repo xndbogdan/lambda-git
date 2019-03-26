@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpringMvcUser:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d95af2ae-a1c1-4337-be4b-b250b55ac551" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMvcUser_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMvcUser_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8f6363bc-9b2d-4f2a-bdac-7ae09ceb5c01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__taglibs_standard_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/.jsdtscope" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.springBeans" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringMvcUser.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/helper/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jbr/config/user-beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/jbr/springmvc/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/RegistrationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="221">
+                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;td&gt;</find>
+      <find>&lt;/td&gt;</find>
+      <find>cssClass</find>
+      <find>validate</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>class</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/jbr/config/user-beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/helper/MD5.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/RegistrationController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpringMvcUser Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SpringMvcUser Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="144" />
+    <option name="y" value="45" />
+    <option name="width" value="1386" />
+    <option name="height" value="997" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553562691107" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SpringMvcUser_war/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="SpringMvcUser:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SpringMvcUser_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SpringMvcUser" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53424" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SpringMvcUser:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d95af2ae-a1c1-4337-be4b-b250b55ac551" name="Default Changelist" comment="" />
+      <created>1553557549121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553557549121</updated>
+      <workItem from="1553557552540" duration="474000" />
+      <workItem from="1553558320977" duration="4361000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4835000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17910448" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30877572" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3298611" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.23294243" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jbr/config/user-beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/helper/MD5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/jbr:SpringMvcUser:0.1">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>jbr:SpringMvcUser:0.1</OriginalElement>
+          <nodes>
+            <node x="351.2764644746788" y="643.0">jbr:SpringMvcUser:0.1</node>
+            <node x="258.0" y="534.0">junit:junit:jar:4.12</node>
+            <node x="231.49999999999997" y="445.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="330.1011526832957" y="79.0">org.springframework:spring-core:jar:4.3.2.RELEASE</node>
+            <node x="310.6011526832957" y="0.0">org.springframework:spring-core:jar:4.3.2.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="279.6377645502648" y="188.0">org.springframework:spring-beans:jar:4.3.2.RELEASE</node>
+            <node x="478.5982142857142" y="366.0">org.springframework:spring-context:jar:4.3.2.RELEASE</node>
+            <node x="417.3181311413454" y="287.0">org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-aop:jar:4.3.2.RELEASE</node>
+            <node x="626.8440192743763" y="287.0">org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-expression:jar:4.3.2.RELEASE</node>
+            <node x="104.0" y="366.0">org.springframework:spring-jdbc:jar:4.3.2.RELEASE</node>
+            <node x="120.5" y="287.0">org.springframework:spring-jdbc:jar:4.3.2.RELEASE/org.springframework:spring-tx:jar:4.3.2.RELEASE</node>
+            <node x="10.5" y="188.0">org.springframework:spring-test:jar:4.3.2.RELEASE</node>
+            <node x="443.56813114134536" y="534.0">org.springframework:spring-webmvc:jar:4.3.2.RELEASE</node>
+            <node x="361.7857142857142" y="445.0">org.springframework:spring-webmvc:jar:4.3.2.RELEASE/org.springframework:spring-web:jar:4.3.2.RELEASE</node>
+            <node x="748.5681311413455" y="534.0">javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="578.5681311413455" y="534.0">mysql:mysql-connector-java:jar:5.1.9</node>
+            <node x="884.5681311413454" y="534.0">javax.servlet.jsp.jstl:jstl-api:jar:1.2</node>
+            <node x="949.760685941043" y="445.0">javax.servlet.jsp.jstl:jstl-api:jar:1.2/javax.servlet:servlet-api:jar:2.5</node>
+            <node x="861.760685941043" y="445.0">javax.servlet.jsp.jstl:jstl-api:jar:1.2/javax.servlet.jsp:jsp-api:jar:2.1</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="jbr:SpringMvcUser:0.1" target="org.springframework:spring-webmvc:jar:4.3.2.RELEASE">
+              <point x="5.599999999999966" y="-14.5" />
+              <point x="412.87646447467876" y="583.0" />
+              <point x="501.06813114134536" y="583.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="13.625" y="-14.5" />
+              <point x="546.7232142857142" y="341.0" />
+              <point x="538.5982142857142" y="341.0" />
+              <point x="538.5982142857142" y="148.0" />
+              <point x="399.8511526832957" y="148.0" />
+              <point x="23.25" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE/org.springframework:spring-web:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-aop:jar:4.3.2.RELEASE">
+              <point x="11.5" y="-14.5" />
+              <point x="419.2857142857142" y="420.0" />
+              <point x="421.2857142857142" y="420.0" />
+              <point x="421.2857142857142" y="341.0" />
+              <point x="432.3181311413454" y="341.0" />
+              <point x="-30.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.3.2.RELEASE/org.springframework:spring-tx:jar:4.3.2.RELEASE" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="19.75" y="-14.5" />
+              <point x="179.75" y="247.0" />
+              <point x="286.85205026455054" y="247.0" />
+              <point x="-43.28571428571428" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-aop:jar:4.3.2.RELEASE">
+              <point x="-9.583333333333314" y="-14.5" />
+              <point x="491.4847978080121" y="494.0" />
+              <point x="466.0357142857142" y="494.0" />
+              <point x="466.0357142857142" y="341.0" />
+              <point x="462.3181311413454" y="341.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE/org.springframework:spring-web:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE">
+              <point x="34.5" y="-14.5" />
+              <point x="442.2857142857142" y="420.0" />
+              <point x="496.76488095238096" y="420.0" />
+              <point x="-36.333333333333314" y="14.5" />
+            </edge>
+            <edge source="javax.servlet.jsp.jstl:jstl-api:jar:1.2" target="javax.servlet.jsp.jstl:jstl-api:jar:1.2/javax.servlet.jsp:jsp-api:jar:2.1">
+              <point x="-17.0" y="-14.5" />
+              <point x="901.5681311413454" y="514.0" />
+              <point x="895.760685941043" y="514.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="28.75" y="-14.5" />
+              <point x="529.8181311413454" y="504.0" />
+              <point x="616.3440192743763" y="504.0" />
+              <point x="616.3440192743763" y="138.0" />
+              <point x="409.15115268329566" y="138.0" />
+              <point x="32.549999999999955" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.3.2.RELEASE" target="org.springframework:spring-jdbc:jar:4.3.2.RELEASE/org.springframework:spring-tx:jar:4.3.2.RELEASE">
+              <point x="0.0" y="-14.5" />
+              <point x="150.5" y="341.0" />
+              <point x="160.0" y="341.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="org.springframework:spring-jdbc:jar:4.3.2.RELEASE">
+              <point x="-28.0" y="-14.5" />
+              <point x="379.2764644746788" y="603.0" />
+              <point x="150.49999999999997" y="603.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="-50.400000000000034" y="-14.5" />
+              <point x="356.87646447467876" y="623.0" />
+              <point x="0.0" y="623.0" />
+              <point x="0.0" y="128.0" />
+              <point x="334.75115268329574" y="128.0" />
+              <point x="-41.849999999999994" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="-13.625" y="-14.5" />
+              <point x="519.4732142857142" y="341.0" />
+              <point x="527.5982142857142" y="341.0" />
+              <point x="527.5982142857142" y="237.0" />
+              <point x="373.4234788359791" y="237.0" />
+              <point x="43.28571428571428" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.3.2.RELEASE/org.springframework:spring-tx:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="-19.75" y="-14.5" />
+              <point x="140.24999999999997" y="158.0" />
+              <point x="362.6511526832958" y="158.0" />
+              <point x="-13.949999999999989" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="org.springframework:spring-test:jar:4.3.2.RELEASE">
+              <point x="-39.200000000000045" y="-14.5" />
+              <point x="368.07646447467874" y="613.0" />
+              <point x="55.0" y="613.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="mysql:mysql-connector-java:jar:5.1.9">
+              <point x="16.80000000000001" y="-14.5" />
+              <point x="424.0764644746788" y="593.0" />
+              <point x="653.0681311413455" y="593.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-core:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE/commons-logging:commons-logging:jar:1.2">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-aop:jar:4.3.2.RELEASE">
+              <point x="-40.875" y="-14.5" />
+              <point x="30.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-test:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="0.0" y="-14.5" />
+              <point x="55.0" y="138.0" />
+              <point x="344.05115268329575" y="138.0" />
+              <point x="-32.55000000000001" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="org.springframework:spring-context:jar:4.3.2.RELEASE">
+              <point x="28.0" y="-14.5" />
+              <point x="435.2764644746788" y="603.0" />
+              <point x="738.0681311413455" y="603.0" />
+              <point x="738.0681311413455" y="420.0" />
+              <point x="569.4315476190476" y="420.0" />
+              <point x="36.333333333333314" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="javax.servlet.jsp.jstl:jstl-api:jar:1.2">
+              <point x="50.39999999999998" y="-14.5" />
+              <point x="457.67646447467877" y="623.0" />
+              <point x="918.5681311413454" y="623.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE">
+              <point x="9.583333333333343" y="-14.5" />
+              <point x="510.65146447467873" y="494.0" />
+              <point x="533.0982142857142" y="494.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-expression:jar:4.3.2.RELEASE">
+              <point x="47.916666666666686" y="-14.5" />
+              <point x="548.9847978080121" y="514.0" />
+              <point x="720.5940192743763" y="514.0" />
+              <point x="31.25" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE" target="org.springframework:spring-webmvc:jar:4.3.2.RELEASE/org.springframework:spring-web:jar:4.3.2.RELEASE">
+              <point x="-28.75" y="-14.5" />
+              <point x="472.31813114134536" y="504.0" />
+              <point x="407.7857142857142" y="504.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE" target="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-expression:jar:4.3.2.RELEASE">
+              <point x="40.875" y="-14.5" />
+              <point x="573.9732142857142" y="341.0" />
+              <point x="658.0940192743763" y="341.0" />
+              <point x="-31.25" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-expression:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="0.0" y="-14.5" />
+              <point x="689.3440192743763" y="128.0" />
+              <point x="418.45115268329573" y="128.0" />
+              <point x="41.849999999999966" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="-16.80000000000001" y="-14.5" />
+              <point x="390.4764644746788" y="593.0" />
+              <point x="220.99999999999997" y="593.0" />
+              <point x="220.99999999999997" y="267.0" />
+              <point x="315.7091931216934" y="267.0" />
+              <point x="-14.428571428571445" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="-47.916666666666686" y="-14.5" />
+              <point x="453.15146447467873" y="514.0" />
+              <point x="351.0" y="514.0" />
+              <point x="351.0" y="267.0" />
+              <point x="330.1377645502648" y="267.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="junit:junit:jar:4.12">
+              <point x="-5.600000000000023" y="-14.5" />
+              <point x="401.67646447467877" y="583.0" />
+              <point x="286.0" y="583.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-beans:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="0.0" y="-14.5" />
+              <point x="330.1377645502648" y="168.0" />
+              <point x="371.95115268329573" y="168.0" />
+              <point x="-4.649999999999977" y="14.5" />
+            </edge>
+            <edge source="javax.servlet.jsp.jstl:jstl-api:jar:1.2" target="javax.servlet.jsp.jstl:jstl-api:jar:1.2/javax.servlet:servlet-api:jar:2.5">
+              <point x="17.0" y="-14.5" />
+              <point x="935.5681311413454" y="514.0" />
+              <point x="993.260685941043" y="514.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-aop:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="22.5" y="-14.5" />
+              <point x="484.8181311413454" y="158.0" />
+              <point x="390.55115268329575" y="158.0" />
+              <point x="13.949999999999989" y="14.5" />
+            </edge>
+            <edge source="jbr:SpringMvcUser:0.1" target="javax.servlet:javax.servlet-api:jar:3.1.0">
+              <point x="39.200000000000045" y="-14.5" />
+              <point x="446.47646447467883" y="613.0" />
+              <point x="806.5681311413455" y="613.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE/org.springframework:spring-web:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="-11.5" y="-14.5" />
+              <point x="396.2857142857142" y="420.0" />
+              <point x="406.5681311413454" y="420.0" />
+              <point x="406.5681311413454" y="168.0" />
+              <point x="381.2511526832957" y="168.0" />
+              <point x="4.649999999999977" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.3.2.RELEASE/org.springframework:spring-aop:jar:4.3.2.RELEASE" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="-22.5" y="-14.5" />
+              <point x="439.8181311413454" y="247.0" />
+              <point x="358.99490740740765" y="247.0" />
+              <point x="28.857142857142833" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.3.2.RELEASE/org.springframework:spring-web:jar:4.3.2.RELEASE" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="-34.5" y="-14.5" />
+              <point x="373.2857142857142" y="420.0" />
+              <point x="380.8835695389269" y="420.0" />
+              <point x="380.8835695389269" y="257.0" />
+              <point x="344.5663359788362" y="257.0" />
+              <point x="14.428571428571388" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.3.2.RELEASE" target="org.springframework:spring-beans:jar:4.3.2.RELEASE">
+              <point x="31.0" y="-14.5" />
+              <point x="181.5" y="341.0" />
+              <point x="209.99999999999997" y="341.0" />
+              <point x="209.99999999999997" y="257.0" />
+              <point x="301.280621693122" y="257.0" />
+              <point x="-28.857142857142833" y="14.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.3.2.RELEASE" target="org.springframework:spring-core:jar:4.3.2.RELEASE">
+              <point x="-31.0" y="-14.5" />
+              <point x="119.5" y="341.0" />
+              <point x="110.0" y="341.0" />
+              <point x="110.0" y="148.0" />
+              <point x="353.3511526832957" y="148.0" />
+              <point x="-23.25" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6137624861265261" x="381.03074141048825" y="296.89692585895114" />
+          <SelectedNodes>
+            <node>jbr:SpringMvcUser:0.1</node>
+            <node>mysql:mysql-connector-java:jar:5.1.9</node>
+          </SelectedNodes>
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="64" column="41" lean-forward="true" selection-start-line="58" selection-end-line="64" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SpringMvcUser:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SpringMvcUser</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: commons-logging:commons-logging:1.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.4402299" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
