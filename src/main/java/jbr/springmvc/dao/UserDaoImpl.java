@@ -24,7 +24,7 @@ public class UserDaoImpl implements UserDao {
 
   public void register(User user) {
 
-    String sql = "insert into users values(?,?,?,?,?,?,?)";
+    String sql = "insert into users (username, password, firstname, lastname, email, address, phone) values(?,?,?,?,?,?,?)";
 
     jdbcTemplate.update(sql, new Object[] { user.getUsername(), MD5.getMd5(user.getPassword()), user.getFirstname(),
         user.getLastname(), user.getEmail(), user.getAddress(), user.getPhone() });

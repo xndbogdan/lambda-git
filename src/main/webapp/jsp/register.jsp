@@ -8,6 +8,7 @@
     <title>Registration</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
 </head>
 <body>
     <div class="container">
@@ -48,8 +49,6 @@
             </div>
 
             <form:button id="register" name="register" class="btn btn-primary">Register</form:button>
-            <a href="home.jsp">Home</a>
-
         </form:form>
         <c:if test="${not empty message}">
             <div class="alert alert-danger mt-5" role="alert">${message}</div>

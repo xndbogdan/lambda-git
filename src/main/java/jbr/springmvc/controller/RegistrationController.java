@@ -2,6 +2,7 @@ package jbr.springmvc.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,10 +20,12 @@ public class RegistrationController {
   public UserService userService;
 
   @RequestMapping(value = "/register", method = RequestMethod.GET)
-  public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response) {
+  public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
+    if(HomeController.firewall(session)!=null){
+      return new ModelAndView("redirect:/home");
+    }
     ModelAndView mav = new ModelAndView("register");
     mav.addObject("user", new User());
-
     return mav;
   }
 
@@ -39,6 +42,6 @@ public class RegistrationController {
 
     userService.register(user);
 
-    return new ModelAndView("welcome", "firstname", user.getFirstname());
+    return new ModelAndView("home", "firstname", user.getFirstname());
   }
 }
