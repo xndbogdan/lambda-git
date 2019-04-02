@@ -10,4 +10,8 @@ public interface UserService {
   User validateUser(Login login);
 
   User checkExistance(User user);
+
+  User getUserById(int id);
+
+  //void erase(User user); //for gdpr compliance
 }

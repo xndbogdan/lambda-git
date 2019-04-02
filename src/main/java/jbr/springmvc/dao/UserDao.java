@@ -9,4 +9,5 @@ public interface UserDao {
 
   User validateUser(Login login);
   User checkExistance(User user);
+  User getUserById(int id);
 }

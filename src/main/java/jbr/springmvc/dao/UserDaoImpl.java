@@ -50,6 +50,12 @@ public class UserDaoImpl implements UserDao {
     return users.size() > 0 ? users.get(0) : null;
   }
 
+  public User getUserById(int id){
+    String sql = "select * from users where id='"+id+"'";
+    List<User> users = jdbcTemplate.query(sql,new UserMapper());
+    return users.size() > 0 ? users.get(0):null;
+  }
+
 }
 
 class UserMapper implements RowMapper<User> {
@@ -64,7 +70,7 @@ class UserMapper implements RowMapper<User> {
     user.setEmail(rs.getString("email"));
     user.setAddress(rs.getString("address"));
     user.setPhone(rs.getInt("phone"));
-
+    user.setId(rs.getInt("id"));
     return user;
   }
 }

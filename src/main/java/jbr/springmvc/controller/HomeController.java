@@ -3,6 +3,7 @@ package jbr.springmvc.controller;
 import jbr.springmvc.model.Login;
 import jbr.springmvc.model.User;
 import jbr.springmvc.service.UserService;
+import jbr.springmvc.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -21,7 +22,8 @@ public class HomeController {
 
   @Autowired
   UserService userService;
-
+  @Autowired
+  VideoService videoService;
   @RequestMapping(value = "/home", method = RequestMethod.GET)
   public ModelAndView Home(HttpServletRequest request, HttpServletResponse response,HttpSession session) {
 
@@ -30,6 +32,7 @@ public class HomeController {
     }
     ModelAndView mav = new ModelAndView("home");
     mav.addObject("user", firewall(session));
+    mav.addObject("videos",videoService.getAll());
     return mav;
   }
 

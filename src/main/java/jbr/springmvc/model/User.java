@@ -8,6 +8,7 @@ public class User {
   private String lastname;
   private String email;
   private String address;
+  public int id;
   private int phone;
 
   public String getUsername() {
@@ -68,4 +69,8 @@ public class User {
   public void setPhone(int phone) {
     this.phone = phone;
   }
+
+  public int getId() {return id;}
+
+  public void setId(int id) {this.id=id;}
 }

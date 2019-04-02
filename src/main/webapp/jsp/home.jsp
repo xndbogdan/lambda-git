@@ -10,6 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
+    <link rel="stylesheet" href="<c:url value="/resources/home.css"/>"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -43,6 +44,19 @@
     </c:if>
 </div>
 
+<div class="container">
+    <div class="row">
+        <p class="col-12">Lastest Uploads</p>
+        <c:forEach items="${videos}" var="video">
+        <div class="col-12 col-lg-4 m-4 bg-dark text-light">
+            <p>${video.title}</p>
+            <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" />
+        </div>
+        </c:forEach>
+    </div>
+
+</div>
+
 <script
         src="http://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -50,5 +64,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="<c:url value="/resources/js/audiojs/audio.min.js" />"></script>
+<script>
+    audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+    });
+</script>
+
 </body>
 </html>
