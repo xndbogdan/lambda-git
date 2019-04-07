@@ -11,6 +11,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
     <link rel="stylesheet" href="<c:url value="/resources/home.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/resources/hamburgers.css"/>"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
@@ -18,8 +19,11 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/home"><img class="img-fluid" style="width:30px;" src="<c:url value="/resources/logo.png" />"> Lambda </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+    <button class="hamburger hamburger--elastic navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="filter:invert(1);">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,7 +52,7 @@
     <div class="row">
         <p class="col-12">Lastest Uploads</p>
         <c:forEach items="${videos}" var="video">
-        <div class="col-12 col-lg-4 m-4 bg-dark text-light">
+        <div class="col-12 col-md-6 col-lg-4 px-4 bg-dark text-light">
             <p>${video.title}</p>
             <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" />
         </div>
@@ -68,6 +72,16 @@
 <script>
     audiojs.events.ready(function() {
         var as = audiojs.createAll();
+    });
+</script>
+<script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    // On click
+    hamburger.addEventListener("click", function() {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
     });
 </script>
 
