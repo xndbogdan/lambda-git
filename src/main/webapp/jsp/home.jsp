@@ -59,7 +59,7 @@
             <div class="p-2 border-left">
                 <div class="row">
                     <div class="col-12">${user.username}</div>
-                    <div class="col-12">${user.firstname} ${user.username}</div>
+                    <div class="col-12">${user.firstname} ${user.lastname}</div>
                     <div class="col-12">Cart (0)</div>
                 </div>
             </div>
