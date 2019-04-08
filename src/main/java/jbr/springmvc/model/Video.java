@@ -4,9 +4,14 @@ public class Video {
 
   private String Title;
   private String Description;
-  private String Price;
+  private double Price;
   private String File_Link;
   private int User_id;
+  private int Approval;
+
+  public static int approval_pending=0;
+  public static int approval_sucessful=1;
+  public static int approval_declined=2;
 
   public String getTitle() {
     return this.Title;
@@ -24,11 +29,11 @@ public class Video {
     this.Description = Description;
   }
 
-  public String getPrice() {
+  public double getPrice() {
     return Price;
   }
 
-  public void setPrice(String lastname) {
+  public void setPrice(double Price) {
     this.Price = Price;
   }
 
@@ -46,5 +51,13 @@ public class Video {
 
   public void setUser_id(int User_id) {
     this.User_id=User_id;
+  }
+
+  public int getApproval(){
+    return Approval;
+  }
+
+  public void setApproval(int Approval){
+    this.Approval=Approval;
   }
 }

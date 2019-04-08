@@ -39,10 +39,26 @@ public class VideoDaoImpl implements VideoDao {
   public List<Video> getAll(){
     String sql = "select * from videos";
     List<Video> videos = jdbcTemplate.query(sql, new VideoMapper());
-
     return videos;
   }
 
+  public List<Video> getApproved(){
+    String sql = "select * from videos where videos.Approval ="+Video.approval_sucessful;
+    List<Video> videos = jdbcTemplate.query(sql, new VideoMapper());
+    return videos;
+  }
+
+  public List<Video> getUnapproved(){
+    String sql = "select * from videos where videos.Approval ="+Video.approval_pending;
+    List<Video> videos = jdbcTemplate.query(sql, new VideoMapper());
+    return videos;
+  }
+
+  public List<Video> getDeclined(){
+    String sql = "select * from videos where videos.Approval ="+Video.approval_declined;
+    List<Video> videos = jdbcTemplate.query(sql, new VideoMapper());
+    return videos;
+  }
 
 }
 
@@ -55,10 +71,10 @@ class VideoMapper implements RowMapper<Video> {
 
     video.setTitle(rs.getString("Title"));
     video.setDescription(rs.getString("Description"));
-    video.setPrice(rs.getString("Price"));
+    video.setPrice(rs.getDouble("Price"));
     video.setFile_Link(rs.getString("File_Link"));
     video.setUser_id(rs.getInt("User_id"));
-
+    video.setApproval(rs.getInt("Approval"));
     return video;
   }
 }

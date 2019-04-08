@@ -11,5 +11,8 @@ public interface VideoService {
   User getUploader(Video video);
   //void erase(Video video);
   List<Video> getAll();
+  List<Video> getApproved();
+  List<Video> getUnapproved();
+  List<Video> getDeclined();
 
 }

@@ -15,10 +15,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body>
+<body style="min-height:100vh;" class="bg-dark">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/home"><img class="img-fluid" style="width:30px;" src="<c:url value="/resources/logo.png" />"> Lambda </a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+    <a class="navbar-brand" href="/home">
+        <div class="row">
+            <div class="col d-flex center-vertically">
+                <img class="img-fluid d-flex center-vertically" style="width:40px; height: 35px;" src="<c:url value="/resources/logo.png" />">
+            </div>
+            <div class="col d-flex center-vertically">
+                <span class="d-flex center-vertically">Lambda</span>
+            </div>
+        </div>
+
+    </a>
 
     <button class="hamburger hamburger--elastic navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="filter:invert(1);">
       <span class="hamburger-box">
@@ -42,24 +52,43 @@
     </div>
 </nav>
 
-<div class="container">
+<div>
     <c:if test="${not empty user}">
-        <div class="alert alert-primary mt-5" role="alert">Welcome, ${user.firstname} ${user.lastname}</div>
+        <div class="d-flex flex-row bg-dark text-light border-bottom">
+            <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
+            <div class="p-2 border-left">
+                <div class="row">
+                    <div class="col-12">${user.username}</div>
+                    <div class="col-12">${user.firstname} ${user.username}</div>
+                    <div class="col-12">Cart (0)</div>
+                </div>
+            </div>
+        </div>
     </c:if>
 </div>
 
 <div class="container">
     <div class="row">
-        <p class="col-12">Lastest Uploads</p>
+        <p class="col-12 text-light mb-0 py-2">Lastest Uploads</p>
         <c:forEach items="${videos}" var="video">
-        <div class="col-12 col-md-6 col-lg-4 px-4 bg-dark text-light">
-            <p>${video.title}</p>
-            <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" />
+        <div class="col-12 col-md-6 col-lg-4 px-4 text-light pt-2 border border-dark bg-light text-dark shadow-lg">
+            <div class="row">
+                <p class="col-12">${userSvc.getUserById(video.user_id).username} - ${video.title}</p>
+                <div class="col-12">
+                    <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" /><br/>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
+                <div class="col-6"><button class="btn btn-primary w-100 btn-sm">Buy</button></div>
+            </div>
         </div>
         </c:forEach>
     </div>
 
 </div>
+
+
 
 <script
         src="http://code.jquery.com/jquery-3.3.1.js"

@@ -19,7 +19,7 @@
 <body class="h-100 bg-auth">
 <div class="container h-100 d-flex justify-content-center my-5">
     <div class="d-flex justify-content-center center-vertically ">
-        <div class="card py-5 px-5">
+        <div class="card py-5 px-5 shadow-lg">
         <form:form id="regForm" modelAttribute="user" action="registerProcess"
                    method="post" class="row">
             <h2 class="text-center w-100 mb-3">Register</h2>

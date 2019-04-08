@@ -32,7 +32,8 @@ public class HomeController {
     }
     ModelAndView mav = new ModelAndView("home");
     mav.addObject("user", firewall(session));
-    mav.addObject("videos",videoService.getAll());
+    mav.addObject("videos",videoService.getApproved());
+    mav.addObject("userSvc",userService);
     return mav;
   }
 

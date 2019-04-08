@@ -20,4 +20,10 @@ public class VideoServiceImpl implements VideoService {
 
   public List<Video> getAll(){return videoDao.getAll();}
 
+  public List<Video> getApproved(){return videoDao.getApproved();}
+
+  public List<Video> getUnapproved(){return videoDao.getUnapproved();}
+
+  public List<Video> getDeclined(){ return videoDao.getDeclined();}
+
 }
