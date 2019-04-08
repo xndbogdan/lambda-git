@@ -52,19 +52,21 @@
     </div>
 </nav>
 
-<div>
-    <c:if test="${not empty user}">
-        <div class="d-flex flex-row bg-dark text-light border-bottom">
-            <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
-            <div class="p-2 border-left">
-                <div class="row">
-                    <div class="col-12">${user.username}</div>
-                    <div class="col-12">${user.firstname} ${user.lastname}</div>
-                    <div class="col-12">Cart (0)</div>
+<div class="border-bottom">
+    <div class="container">
+        <c:if test="${not empty user}">
+            <div class="d-flex flex-row bg-dark text-light">
+                <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
+                <div class="p-2 border-left">
+                    <div class="row">
+                        <div class="col-12">${user.username}</div>
+                        <div class="col-12">${user.firstname} ${user.lastname}</div>
+                        <div class="col-12">Cart (0)</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </c:if>
+        </c:if>
+    </div>
 </div>
 
 <div class="container">
