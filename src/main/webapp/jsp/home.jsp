@@ -82,7 +82,7 @@
             </div>
             <div class="row py-2">
                 <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                <div class="col-6"><button class="btn btn-primary w-100 btn-sm">Buy</button></div>
+                <div class="col-6"><button class="btn btn-success w-100 btn-sm">Buy</button><i class="shiny"></i></div>
             </div>
         </div>
         </c:forEach>
