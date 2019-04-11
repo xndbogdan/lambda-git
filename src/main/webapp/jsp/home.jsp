@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body style="min-height:100vh;" class="bg-dark">
+<body style="min-height:100vh;" class="bg-white">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
     <a class="navbar-brand" href="/home">
@@ -53,15 +53,15 @@
 </nav>
 
 <div class="border-bottom">
-    <div class="container">
+    <div class="container ">
         <c:if test="${not empty user}">
-            <div class="d-flex flex-row bg-dark text-light">
+            <div class="d-flex flex-row bg-white text-dark">
                 <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
                 <div class="p-2 border-left">
                     <div class="row">
                         <div class="col-12">${user.username}</div>
                         <div class="col-12">${user.firstname} ${user.lastname}</div>
-                        <div class="col-12">Cart (0)</div>
+                        <div class="col-12">Cart (<c:if test="${cart!=null}">${cart.videos.size()}</c:if><c:if test="${cart==null}">0</c:if>)</div>
                     </div>
                 </div>
             </div>
@@ -69,9 +69,9 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <p class="col-12 text-light mb-0 py-2">Lastest Uploads</p>
+<div class="container bg-light p-3">
+    <div class="row p-3">
+        <p class="col-12 text-dark mb-0 py-2">Lastest Uploads</p>
         <c:forEach items="${videos}" var="video">
         <div class="col-12 col-md-6 col-lg-4 px-4 text-light pt-2 border border-dark bg-light text-dark shadow-lg">
             <div class="row">
@@ -80,10 +80,18 @@
                     <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" /><br/>
                 </div>
             </div>
-            <div class="row py-2">
-                <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                <div class="col-6"><button class="btn btn-success w-100 btn-sm">Buy</button><i class="shiny"></i></div>
-            </div>
+            <c:if test="${!cart.isInCart(video)}">
+                <div class="row py-2">
+                    <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
+                    <div class="col-6"><form enctype="application/x-www-form-urlencoded" method="post" action="/buy"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Buy</button></form><i class="shiny"></i></div>
+                </div>
+            </c:if>
+            <c:if test="${cart.isInCart(video)}">
+                <div class="row py-2">
+                    <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
+                    <div class="col-6"><button class="btn btn-success w-100 btn-sm" disabled>In your cart</button></div>
+                </div>
+            </c:if>
         </div>
         </c:forEach>
     </div>

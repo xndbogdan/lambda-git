@@ -8,6 +8,7 @@ public class Video {
   private String File_Link;
   private int User_id;
   private int Approval;
+  private int id;
 
   public static int approval_pending=0;
   public static int approval_sucessful=1;
@@ -60,4 +61,8 @@ public class Video {
   public void setApproval(int Approval){
     this.Approval=Approval;
   }
+
+  public int getId() {return this.id;}
+
+  public void setId(int id) {this.id = id;}
 }

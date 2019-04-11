@@ -56,6 +56,7 @@ public class LoginController {
   @RequestMapping(value = "/logout", method = RequestMethod.GET)
   public ModelAndView logout(HttpSession session) {
     session.removeAttribute("user");
+    session.removeAttribute("cart");
     return new ModelAndView("redirect:/");
   }
 

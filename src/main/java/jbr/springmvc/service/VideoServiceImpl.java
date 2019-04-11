@@ -26,4 +26,6 @@ public class VideoServiceImpl implements VideoService {
 
   public List<Video> getDeclined(){ return videoDao.getDeclined();}
 
+  public Video getVideoById(int id){return videoDao.getVideoById(id);}
+
 }

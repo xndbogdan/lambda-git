@@ -60,6 +60,12 @@ public class VideoDaoImpl implements VideoDao {
     return videos;
   }
 
+  public Video getVideoById(int id){
+    String sql = "select * from videos where id='"+id+"'";
+    List<Video> videos = jdbcTemplate.query(sql,new VideoMapper());
+    return videos.size() > 0 ? videos.get(0):null;
+  }
+
 }
 
 class VideoMapper implements RowMapper<Video> {
@@ -75,6 +81,7 @@ class VideoMapper implements RowMapper<Video> {
     video.setFile_Link(rs.getString("File_Link"));
     video.setUser_id(rs.getInt("User_id"));
     video.setApproval(rs.getInt("Approval"));
+    video.setId(rs.getInt("id"));
     return video;
   }
 }

@@ -14,5 +14,6 @@ public interface VideoService {
   List<Video> getApproved();
   List<Video> getUnapproved();
   List<Video> getDeclined();
+  Video getVideoById(int id);
 
 }
