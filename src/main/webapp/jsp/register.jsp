@@ -8,10 +8,9 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Lambda - Register</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
+    <link rel="stylesheet" href="<c:url value="/resources/bootstrap.min.css"/>"/>
     <link rel="stylesheet" href="<c:url value="/resources/auth.css"/>"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -70,12 +69,8 @@
 
 </div>
 
-<script
-        src="http://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<script src="<c:url value="/resources/js/jquery-3.3.1.js" />"></script>
+<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+
 </body>
 </html>
