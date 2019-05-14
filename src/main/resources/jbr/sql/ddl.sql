@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 8.0.15)
 # Database: LambdaSpring
-# Generation Time: 2019-04-22 21:34:53 +0000
+# Generation Time: 2019-05-14 21:17:34 +0000
 # ************************************************************
 
 
@@ -41,9 +41,9 @@ DROP TABLE IF EXISTS `order_items`;
 
 CREATE TABLE `order_items` (
                                `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT,
-                               `video_id` bigint(11) unsigned DEFAULT NULL,
+                               `video_id` bigint(11) unsigned NOT NULL,
                                `price` double DEFAULT NULL,
-                               `order_id` bigint(11) unsigned DEFAULT NULL,
+                               `order_id` bigint(11) unsigned NOT NULL,
                                PRIMARY KEY (`id`),
                                KEY `video_id` (`video_id`),
                                KEY `order_id` (`order_id`),
@@ -60,8 +60,8 @@ DROP TABLE IF EXISTS `orders`;
 
 CREATE TABLE `orders` (
                           `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT,
-                          `user_id` bigint(11) DEFAULT NULL,
-                          `date` timestamp NULL DEFAULT NULL,
+                          `user_id` bigint(11) NOT NULL,
+                          `date` timestamp NOT NULL,
                           PRIMARY KEY (`id`),
                           KEY `user_id` (`user_id`),
                           CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
@@ -78,23 +78,15 @@ CREATE TABLE `users` (
                          `username` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
                          `password` varchar(33) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
                          `firstname` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-                         `lastname` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-                         `email` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+                         `lastname` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
+                         `email` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '',
                          `address` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
                          `phone` int(11) DEFAULT NULL,
                          `id` bigint(20) NOT NULL AUTO_INCREMENT,
+                         `admin` tinyint(1) NOT NULL DEFAULT '0',
                          PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-
-INSERT INTO `users` (`username`, `password`, `firstname`, `lastname`, `email`, `address`, `phone`, `id`)
-VALUES
-('xndbogdan','81ca3418a1a1c5ecf857ecddbc42b564','Mosteanu','Bogdan','aftermathhmusic@gmail.com','Al Pravat Nr. 4, Ap 33',723400149,2);
-
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 # Dump of table videos
@@ -114,7 +106,7 @@ CREATE TABLE `videos` (
                           PRIMARY KEY (`id`),
                           KEY `FK_Videos_Users` (`User_id`),
                           CONSTRAINT `FK_Videos_Users` FOREIGN KEY (`User_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 

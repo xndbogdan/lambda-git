@@ -7,47 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d95af2ae-a1c1-4337-be4b-b250b55ac551" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderItemDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Order_item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/OrderItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/OrderItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/checkout.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/upload.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringMvcUser_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMvcUser_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMvcUser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMvcUser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a10" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/a10.pub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/VideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/VideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jbr/springmvc/service/VideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jbr/config/video-beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jbr/config/video-beans.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/navbar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/navbar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/home.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,19 +45,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/service/VideoServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="-103">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDaoImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderItemDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="150">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,9 +93,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/checkout.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-790" />
+            <state relative-caret-position="150">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -141,15 +115,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="66" column="232" selection-start-line="66" selection-start-column="232" selection-end-line="66" selection-end-column="232" />
             </state>
           </provider>
         </entry>
@@ -197,7 +162,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/jbr/config/user-beans.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql" />
         <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Order_item.java" />
         <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderDao.java" />
@@ -229,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql" />
       </list>
     </option>
   </component>
@@ -368,6 +333,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="jbr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lambda-git" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="jbr" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringMvcUser" type="b2602c69:ProjectViewProjectNode" />
@@ -541,12 +523,12 @@
       <workItem from="1557215954102" duration="246000" />
       <workItem from="1557774326078" duration="2476000" />
       <workItem from="1557785657340" duration="4162000" />
-      <workItem from="1557850052592" duration="7989000" />
+      <workItem from="1557850052592" duration="8631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30117000" />
+    <option name="totallyTimeSpent" value="30759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="809" extended-state="0" />
@@ -902,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/model/Cart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1028,16 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderItemDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="39" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a10.pub" />
     <entry file="file://$PROJECT_DIR$/a10" />
     <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderDao.java">
@@ -1128,13 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1241,8 +1199,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/VideoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="-103">
           <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/OrderItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jbr/springmvc/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jbr/sql/ddl.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
