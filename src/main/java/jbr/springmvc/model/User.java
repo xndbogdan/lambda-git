@@ -8,6 +8,7 @@ public class User {
   private String lastname;
   private String email;
   private String address;
+  private Boolean admin;
   public int id;
   private int phone;
 
@@ -70,4 +71,8 @@ public class User {
   public int getId() {return id;}
 
   public void setId(int id) {this.id=id;}
+
+  public void setAdmin(boolean admin){ this.admin=admin; }
+
+  public boolean getAdmin(){ return admin; }
 }

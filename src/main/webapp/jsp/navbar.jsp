@@ -22,9 +22,18 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/home">Home <span class="sr-only"></span></a>
+            <li class="nav-item">
+                <a class="nav-link <c:if test="${route=='home'}">active</c:if>" href="/home">Home <span class="sr-only"></span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link <c:if test="${route=='upload'}">active</c:if>" href="/upload">Upload <span class="sr-only"></span></a>
+            </li>
+            <c:if test="${user.admin}">
+                <li class="nav-item">
+                    <a class="nav-link <c:if test="${route=='admin'}">active</c:if>" href="/admin">Admin Panel<span class="sr-only"></span></a>
+                </li>
+            </c:if>
+
             <li class="nav-item">
                 <a class="nav-link" href="/logout">Logout <span class="sr-only"></span></a>
             </li>

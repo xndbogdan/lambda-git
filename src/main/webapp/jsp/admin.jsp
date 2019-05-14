@@ -61,26 +61,12 @@
                     <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" /><br/>
                 </div>
             </div>
-            <c:if test="${user.id == video.user_id}">
-                <div class="row py-2">
-                    <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                    <div class="col-6"><button class="btn btn-success w-100 btn-sm" disabled>Owned</button></div>
-                </div>
-            </c:if>
-            <c:if test="${user.id != video.user_id}">
-                <c:if test="${!cart.isInCart(video)}">
-                    <div class="row py-2">
-                        <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                        <div class="col-6"><form enctype="application/x-www-form-urlencoded" method="post" action="/buy"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Buy</button></form><i class="shiny"></i></div>
-                    </div>
-                </c:if>
-                <c:if test="${cart.isInCart(video)}">
-                    <div class="row py-2">
-                        <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                        <div class="col-6"><button class="btn btn-success w-100 btn-sm" disabled>In your cart</button></div>
-                    </div>
-                </c:if>
-            </c:if>
+
+            <div class="row py-2">
+                <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
+                <div class="col-6"><form enctype="application/x-www-form-urlencoded" method="post" action="/approve"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Approve</button></form><i class="shiny"></i></div>
+            </div>
+
         </div>
         </c:forEach>
     </div>

@@ -92,3 +92,19 @@
     80% {opacity: 0.0}
     100% { left: 82%}
 }
+
+.revealer:hover .hidden-element {
+    display:block;
+}
+
+.hidden-element {
+    display:none;
+    transition: all .3s linear;
+    position:absolute;
+    background-color:#fff;
+    z-index:9999;
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}

@@ -28,4 +28,6 @@ public class VideoServiceImpl implements VideoService {
 
   public Video getVideoById(int id){return videoDao.getVideoById(id);}
 
+  public void approveVideo(int id) { videoDao.approveVideo(id);}
+
 }

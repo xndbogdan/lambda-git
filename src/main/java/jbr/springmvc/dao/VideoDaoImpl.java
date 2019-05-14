@@ -28,8 +28,13 @@ public class VideoDaoImpl implements VideoDao {
   UserService userService;
 
   public void upload(Video video, User user){
-    String sql = "insert into video(Title,Description,Price,File_Link,User_id) values (?,?,?,?,?)";
-    jdbcTemplate.update(sql, new Object[] {video.getTitle(), video.getDescription(), video.getPrice(), video.getFile_Link(), video.getUser_id()});
+    String sql = "insert into videos(Title,Description,Price,File_Link,User_id) values (?,?,?,?,?)";
+    jdbcTemplate.update(sql, new Object[] {video.getTitle(), video.getDescription(), video.getPrice(), video.getFile_Link(), user.getId()});
+  }
+
+  public void approveVideo(int id){
+    String sql = "UPDATE videos set Approval='"+Video.approval_sucessful+"' where id= '"+id+"'";
+    jdbcTemplate.execute(sql);
   }
 
   public User getUploader(Video video){

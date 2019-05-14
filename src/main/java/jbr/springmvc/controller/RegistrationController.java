@@ -42,6 +42,6 @@ public class RegistrationController {
 
     userService.register(user);
 
-    return new ModelAndView("home", "firstname", user.getFirstname());
+    return new ModelAndView("redirect:/");
   }
 }
