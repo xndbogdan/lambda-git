@@ -101,17 +101,20 @@ public class HomeController {
   @RequestMapping(value = "/approve", method = RequestMethod.POST, produces = "application/json")
   public ModelAndView Approve(HttpServletRequest request, HttpServletResponse response,HttpSession session,@RequestBody MultiValueMap<String, String> formData) {
     Integer product_id = formData.get("product_id").get(0)!=null?Integer.parseInt(formData.get("product_id").get(0)):null;
-
-    if(admin_firewall(session)==null){
-      return new ModelAndView("redirect:/");
-    }
-    if(product_id==null){
-      return new ModelAndView("redirect:/admin");
-    }
+    if(admin_firewall(session)==null){ return new ModelAndView("redirect:/"); }
+    if(product_id==null){ return new ModelAndView("redirect:/admin"); }
     videoService.approveVideo(product_id);
     return new ModelAndView("redirect:/admin");
   }
 
+  @RequestMapping(value = "/decline", method = RequestMethod.POST, produces = "application/json")
+  public ModelAndView Decline(HttpServletRequest request, HttpServletResponse response,HttpSession session,@RequestBody MultiValueMap<String, String> formData) {
+    Integer product_id = formData.get("product_id").get(0)!=null?Integer.parseInt(formData.get("product_id").get(0)):null;
+    if(admin_firewall(session)==null){ return new ModelAndView("redirect:/"); }
+    if(product_id==null){ return new ModelAndView("redirect:/admin"); }
+    videoService.declineVideo(product_id);
+    return new ModelAndView("redirect:/admin");
+  }
   static User firewall(HttpSession session ){
     if(session.getAttribute("user")!=null){
       User usr = (User)session.getAttribute("user");

@@ -44,6 +44,12 @@ public class OrderItemDaoImpl implements OrderItemDao {
     List<Order_item> order_items = jdbcTemplate.query(sql, new OrderItemMapper());
     return order_items;
   }
+  @Override
+  public Video getVideoByOrderItem(Order_item order_item){
+    String sql = "select * from videos where id='"+order_item.getVideo_id()+"'";
+    List<Video> videos = jdbcTemplate.query(sql, new VideoMapper());
+    return videos.size()>0 ? videos.get(0):null;
+  }
 }
 
 class OrderItemMapper implements RowMapper<Order_item> {

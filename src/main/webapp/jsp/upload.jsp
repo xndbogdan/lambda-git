@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Lambda - Home</title>
+    <title>Lambda - Upload</title>
 
     <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
     <link rel="stylesheet" href="<c:url value="/resources/bootstrap.min.css"/>"/>

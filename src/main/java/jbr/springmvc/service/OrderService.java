@@ -12,4 +12,5 @@ public interface OrderService {
   User getUser(Order order);
   Double getPrice(Order order);
   List<Order_item> getItems(Order order);
+  List<Order> getOrdersByUser(User user);
 }

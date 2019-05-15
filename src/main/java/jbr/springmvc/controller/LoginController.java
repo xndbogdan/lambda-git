@@ -38,17 +38,14 @@ public class LoginController {
   @RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
   public ModelAndView loginProcess(HttpServletRequest request, HttpServletResponse response,
       @ModelAttribute("login") Login login, HttpSession session) {
-    System.out.println("Submitted login data");
     ModelAndView mav = null;
 
     User user = userService.validateUser(login);
 
     if (user != null) {
-      System.out.println("login sucessful!");
       session.setAttribute("user",user);
       return new ModelAndView("redirect:/home");
     }
-    System.out.println("Wrong login details");
     mav = new ModelAndView("login");
     mav.addObject("message", "Invalid credentials!");
 

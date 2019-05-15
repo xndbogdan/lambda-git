@@ -18,4 +18,5 @@ public interface VideoDao {
   List<Video> getDeclined();
   Video getVideoById(int id);
   void approveVideo(int id);
+  void declineVideo(int id);
 }

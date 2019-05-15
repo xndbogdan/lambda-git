@@ -52,7 +52,7 @@
 
 <div class="container bg-light p-3">
     <div class="row p-3">
-        <p class="col-12 text-dark mb-0 py-2">Lastest Uploads</p>
+        <p class="col-12 text-dark mb-0 py-2">Lastest uploads</p>
         <c:forEach items="${videos}" var="video">
         <div class="col-12 col-md-6 col-lg-4 px-4 text-light pt-2 border border-dark bg-light text-dark shadow-lg">
             <div class="row">

@@ -42,7 +42,7 @@ public class OrderDaoImpl implements OrderDao {
 
   @Override
   public Order getOrderById(int id) {
-    String sql = "select * from orders where id'"+id+"'";
+    String sql = "select * from orders where id='"+id+"'";
     List<Order> orders = jdbcTemplate.query(sql, new OrderMapper());
     return orders.size() > 0 ? orders.get(0):null;
   }
@@ -66,6 +66,15 @@ public class OrderDaoImpl implements OrderDao {
   public List<Order_item> getItems(Order order) {
     return orderService.getItems(order);
   }
+
+  @Override
+  public List<Order> getOrdersByUser(User user){
+    String sql = "select * from orders where user_id ='"+user.getId()+"'";
+    List<Order> orders = jdbcTemplate.query(sql, new OrderMapper());
+    return orders.size()>0 ? orders:null;
+  }
+
+
 }
 
 class OrderMapper implements RowMapper<Order> {

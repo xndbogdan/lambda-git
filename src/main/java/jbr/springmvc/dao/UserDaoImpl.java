@@ -2,17 +2,19 @@ package jbr.springmvc.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
 
 import jbr.springmvc.helper.MD5;
+import jbr.springmvc.model.*;
+import jbr.springmvc.service.OrderItemService;
+import jbr.springmvc.service.OrderService;
+import jbr.springmvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-
-import jbr.springmvc.model.Login;
-import jbr.springmvc.model.User;
 
 public class UserDaoImpl implements UserDao {
 
@@ -21,6 +23,12 @@ public class UserDaoImpl implements UserDao {
 
   @Autowired
   JdbcTemplate jdbcTemplate;
+
+  @Autowired
+  OrderService orderService;
+
+  @Autowired
+  OrderItemService orderItemService;
 
   public void register(User user) {
 
@@ -54,6 +62,19 @@ public class UserDaoImpl implements UserDao {
     String sql = "select * from users where id='"+id+"'";
     List<User> users = jdbcTemplate.query(sql,new UserMapper());
     return users.size() > 0 ? users.get(0):null;
+  }
+
+  public List<Video> getBoughtTracks(User user){
+    List<Order> orders = orderService.getOrdersByUser(user);
+    List<Order_item> order_items = new ArrayList<Order_item>();
+    List<Video> videos = new ArrayList<>();
+    for(Order order:orders){
+      order_items.addAll(orderItemService.getOrderItemsByOrder(order));
+    }
+    for(Order_item order_item:order_items){
+      videos.add(orderItemService.getVideoByOrderItem(order_item));
+    }
+    return videos;
   }
 
 }

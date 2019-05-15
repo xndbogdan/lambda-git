@@ -38,4 +38,7 @@ public class OrderServiceImpl implements OrderService {
     return orderDao.getItems(order);
   }
 
+  @Override
+  public List<Order> getOrdersByUser(User user) { return orderDao.getOrdersByUser(user);}
+
 }

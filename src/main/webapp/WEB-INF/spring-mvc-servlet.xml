@@ -14,6 +14,8 @@
 
 	<import resource="classpath:jbr/config/user-beans.xml" />
 	<import resource="classpath:jbr/config/video-beans.xml" />
+	<import resource="classpath:jbr/config/order-beans.xml" />
+	<import resource="classpath:jbr/config/orderItem-beans.xml" />
 	<context:component-scan base-package="jbr.springmvc" />
 
 	<context:annotation-config />

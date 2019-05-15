@@ -37,6 +37,11 @@ public class VideoDaoImpl implements VideoDao {
     jdbcTemplate.execute(sql);
   }
 
+  public void declineVideo(int id){
+    String sql = "UPDATE videos set Approval='"+Video.approval_declined+"' where id= '"+id+"'";
+    jdbcTemplate.execute(sql);
+  }
+
   public User getUploader(Video video){
     return userService.getUserById(video.getUser_id());
   }

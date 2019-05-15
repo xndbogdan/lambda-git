@@ -30,4 +30,6 @@ public class VideoServiceImpl implements VideoService {
 
   public void approveVideo(int id) { videoDao.approveVideo(id);}
 
+  public void declineVideo(int id) { videoDao.declineVideo(id);}
+
 }

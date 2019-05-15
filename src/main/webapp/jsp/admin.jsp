@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Lambda - Home</title>
+    <title>Lambda - Admin Panel</title>
 
     <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
     <link rel="stylesheet" href="<c:url value="/resources/bootstrap.min.css"/>"/>
@@ -52,7 +52,7 @@
 
 <div class="container bg-light p-3">
     <div class="row p-3">
-        <p class="col-12 text-dark mb-0 py-2">Lastest Uploads</p>
+        <p class="col-12 text-dark mb-0 py-2">Lastest unapproved uploads</p>
         <c:forEach items="${videos}" var="video">
         <div class="col-12 col-md-6 col-lg-4 px-4 text-light pt-2 border border-dark bg-light text-dark shadow-lg">
             <div class="row">
@@ -64,7 +64,8 @@
 
             <div class="row py-2">
                 <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                <div class="col-6"><form enctype="application/x-www-form-urlencoded" method="post" action="/approve"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Approve</button></form><i class="shiny"></i></div>
+                <div class="col-3"><form enctype="application/x-www-form-urlencoded" method="post" action="/approve"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Approve</button></form><i class="shiny"></i></div>
+                <div class="col-3"><form enctype="application/x-www-form-urlencoded" method="post" action="/decline"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Decline</button></form><i class="shiny"></i></div>
             </div>
 
         </div>
