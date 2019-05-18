@@ -19,36 +19,7 @@
 
 <jsp:include page="navbar.jsp"/>
 
-<div class="border-bottom">
-    <div class="container ">
-        <c:if test="${not empty user}">
-            <div class="d-flex flex-row bg-white text-dark">
-                <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
-                <div class="p-2 border-left">
-                    <div class="row">
-                        <div class="col-12">${user.username}</div>
-                        <div class="col-12">${user.firstname} ${user.lastname}</div>
-                        <div class="col-12 revealer cursor-pointer ">Cart (<c:if test="${cart!=null}">${cart.videos.size()}</c:if><c:if test="${cart==null}">0</c:if>)
-                            <div class="hidden-element shadow-lg pr-4 pl-2 border">
-                                <c:if test="${cart==null}">
-                                    <span>Your cart is empty</span>
-                                </c:if>
-                                <c:if test="${cart!=null}">
-                                <ul class="list-unstyled">
-                                    <c:forEach items="${cart.videos}" var="video">
-                                        <li>${video.title} - ${video.price}</li>
-                                    </c:forEach>
-                                </ul>
-                                </c:if>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </c:if>
-    </div>
-</div>
+<jsp:include page="user-bar.jsp"/>
 
 <div class="container bg-light p-3">
     <div class="row p-3">
@@ -64,10 +35,9 @@
 
             <div class="row py-2">
                 <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                <div class="col-3"><form enctype="application/x-www-form-urlencoded" method="post" action="/approve"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Approve</button></form><i class="shiny"></i></div>
-                <div class="col-3"><form enctype="application/x-www-form-urlencoded" method="post" action="/decline"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Decline</button></form><i class="shiny"></i></div>
+                <div class="col-4 pr-1"><form enctype="application/x-www-form-urlencoded" method="post" action="/approve"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-dark w-100 btn-sm">Approve</button></form><i class="shiny"></i></div>
+                <div class="col-2 pl-1"><form enctype="application/x-www-form-urlencoded" method="post" action="/decline"><input type="hidden" value="${video.getId()}" name="product_id"/> <button class="btn btn-danger w-100 btn-sm">X</button></form><i class="shiny"></i></div>
             </div>
-
         </div>
         </c:forEach>
     </div>

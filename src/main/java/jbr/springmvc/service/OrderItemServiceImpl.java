@@ -35,4 +35,7 @@ public class OrderItemServiceImpl implements OrderItemService {
   public Video getVideoByOrderItem(Order_item order_item){
     return orderItemDao.getVideoByOrderItem(order_item);
   }
+
+  @Override
+  public void saveOrderItem(Order_item item) { orderItemDao.saveOrderItem(item);}
 }

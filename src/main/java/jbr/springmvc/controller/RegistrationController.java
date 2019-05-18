@@ -29,7 +29,7 @@ public class RegistrationController {
     return mav;
   }
 
-  @RequestMapping(value = "/registerProcess", method = RequestMethod.POST)
+  @RequestMapping(value = "/registerProcess", method = RequestMethod.POST, headers = "content-type=multipart/form-data", consumes = "multipart/form-data")
   public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("user") User user) {
 
     User user_check = userService.checkExistance(user);

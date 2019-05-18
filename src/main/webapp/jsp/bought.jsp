@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Lambda - Bought Items</title>
+    <title>Lambda - Account</title>
 
     <link rel="icon" type="image/png" href="<c:url value="/resources/logo.png" />"/>
     <link rel="stylesheet" href="<c:url value="/resources/bootstrap.min.css"/>"/>
@@ -18,37 +18,6 @@
 <body style="min-height:100vh;" class="bg-white">
 
 <jsp:include page="navbar.jsp"/>
-
-<div class="border-bottom">
-    <div class="container ">
-        <c:if test="${not empty user}">
-            <div class="d-flex flex-row bg-white text-dark">
-                <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
-                <div class="p-2 border-left">
-                    <div class="row">
-                        <div class="col-12">${user.username}</div>
-                        <div class="col-12">${user.firstname} ${user.lastname}</div>
-                        <div class="col-12 revealer cursor-pointer ">Cart (<c:if test="${cart!=null}">${cart.videos.size()}</c:if><c:if test="${cart==null}">0</c:if>)
-                            <div class="hidden-element shadow-lg pr-4 pl-2 border">
-                                <c:if test="${cart==null}">
-                                    <span>Your cart is empty</span>
-                                </c:if>
-                                <c:if test="${cart!=null}">
-                                <ul class="list-unstyled">
-                                    <c:forEach items="${cart.videos}" var="video">
-                                        <li>${video.title} - ${video.price}</li>
-                                    </c:forEach>
-                                </ul>
-                                </c:if>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </c:if>
-    </div>
-</div>
 
 <div class="container bg-light p-3">
     <div class="row p-3">
@@ -64,7 +33,7 @@
 
             <div class="row py-2">
                 <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
-                <div class="col-3">
+                <div class="col-6">
                     <a href="/resources/uploads/${video.file_Link}">
                         <button class="btn btn-dark w-100 btn-sm">Download</button>
                         <i class="shiny"></i>
@@ -73,6 +42,34 @@
             </div>
 
         </div>
+        </c:forEach>
+    </div>
+
+</div>
+
+<div class="container bg-light p-3">
+    <div class="row p-3">
+        <p class="col-12 text-dark mb-0 py-2">Your uploaded music</p>
+        <c:forEach items="${uploaded}" var="video">
+            <div class="col-12 col-md-6 col-lg-4 px-4 text-light pt-2 border border-dark bg-light text-dark shadow-lg">
+                <div class="row">
+                    <p class="col-12"><span class="text-danger">You</span> - ${video.title}</p>
+                    <div class="col-12">
+                        <audio src="<c:url value="/resources/uploads/${video.file_Link}" />" preload="auto" /><br/>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-6 d-flex"><p class="d-flex align-middle my-0 center-vertically">Price: &euro; ${video.price}</p></div>
+                    <div class="col-6">
+                        <a href="/resources/uploads/${video.file_Link}">
+                            <button class="btn btn-dark w-100 btn-sm">Download</button>
+                            <i class="shiny"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </c:forEach>
     </div>
 

@@ -5,6 +5,7 @@ import jbr.springmvc.model.Order_item;
 import jbr.springmvc.model.User;
 import jbr.springmvc.model.Video;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public interface OrderDao {
@@ -14,5 +15,5 @@ public interface OrderDao {
   Double getPrice(Order order);
   List<Order_item> getItems(Order order);
   List<Order> getOrdersByUser(User user);
-
+  Order getOrderByTimestamp(String uid, User u);
 }

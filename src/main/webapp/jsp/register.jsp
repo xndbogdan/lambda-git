@@ -19,8 +19,7 @@
 <div class="container h-100 d-flex justify-content-center my-5">
     <div class="d-flex justify-content-center center-vertically ">
         <div class="card py-5 px-5 shadow-lg">
-        <form:form id="regForm" modelAttribute="user" action="registerProcess"
-                   method="post" class="row">
+        <form:form id="regForm" modelAttribute="user" action="registerProcess" method="post" class="row" enctype="multipart/form-data">
             <h2 class="text-center w-100 mb-3">Register</h2>
             <div class="form-group col-12 col-md-6">
                 <form:label path="username">Username</form:label>

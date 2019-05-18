@@ -36,8 +36,8 @@ public class OrderDaoImpl implements OrderDao {
 
   @Override
   public void placeOrder(Order order) {
-    String sql = "insert into orders (user_id, date) values(?,?)";
-    jdbcTemplate.update(sql, new Object[]{order.getUser_id(), order.getDate()});
+    String sql = "insert into orders (user_id, date, uid) values(?,?,?)";
+    jdbcTemplate.update(sql, new Object[]{order.getUser_id(), order.getDate(), order.getUid()});
   }
 
   @Override
@@ -74,6 +74,12 @@ public class OrderDaoImpl implements OrderDao {
     return orders.size()>0 ? orders:null;
   }
 
+  @Override
+  public Order getOrderByTimestamp(String uid, User u) {
+    String sql = "select * from orders where user_id='"+u.getId()+"' and uid='"+uid+"'";
+    List<Order> order = jdbcTemplate.query(sql, new OrderMapper());
+    return order.size()>0 ? order.get(0):null;
+  }
 
 }
 

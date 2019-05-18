@@ -18,5 +18,8 @@ public interface UserService {
 
   List<Video> getBoughtTracks(User user);
 
+  List<Video> getUploadedTracks(User user);
+
+  boolean userHasTrack(User user, Video video);
   //void erase(User user); //for gdpr compliance
 }

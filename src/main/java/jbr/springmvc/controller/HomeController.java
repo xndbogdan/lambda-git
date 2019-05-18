@@ -1,9 +1,9 @@
 package jbr.springmvc.controller;
 
-import jbr.springmvc.model.Cart;
-import jbr.springmvc.model.Login;
-import jbr.springmvc.model.User;
-import jbr.springmvc.model.Video;
+import jbr.springmvc.helper.MD5;
+import jbr.springmvc.model.*;
+import jbr.springmvc.service.OrderItemService;
+import jbr.springmvc.service.OrderService;
 import jbr.springmvc.service.UserService;
 import jbr.springmvc.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,11 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 import java.io.*;
 import java.nio.file.Paths;
+import java.sql.Time;
 import java.sql.Timestamp;
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 
 
@@ -33,6 +37,11 @@ public class HomeController {
   UserService userService;
   @Autowired
   VideoService videoService;
+  @Autowired
+  OrderService orderService;
+  @Autowired
+  OrderItemService orderItemService;
+
   @RequestMapping(value = "/home", method = RequestMethod.GET)
   public ModelAndView Home(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
 
@@ -177,6 +186,41 @@ public class HomeController {
     }
     videoService.upload(upload,user);
 
+    return new ModelAndView("redirect:/");
+  }
+
+  @RequestMapping(value = "/account", method = RequestMethod.GET)
+  public ModelAndView Account(HttpServletRequest request, HttpServletResponse response, HttpSession session){
+    if(firewall(session)==null){
+      return new ModelAndView("redirect:/");
+    }
+    ModelAndView mav = new ModelAndView("bought");
+    mav.addObject("user", firewall(session));
+    mav.addObject("route", "account");
+    mav.addObject("videos",userService.getBoughtTracks(firewall(session)));
+    mav.addObject("uploaded",userService.getUploadedTracks(firewall(session)));
+    return mav;
+  }
+
+  @RequestMapping(value = "/checkout", method = RequestMethod.GET, produces = "application/json")
+  public ModelAndView Checkout(HttpServletRequest request, HttpServletResponse response,HttpSession session) {
+    User user = firewall(session);
+    Cart cart = (Cart)session.getAttribute("cart");
+    Order order = new Order();
+    order.setDate(Timestamp.from(Instant.now()));
+    order.setUser_id(user.getId());
+    order.setUid(MD5.getMd5(user.getId()+"_"+order.getDate().toLocalDateTime().toString()));
+    orderService.placeOrder(order);
+    order = orderService.getOrderByTimestamp(order.getUid(),user);
+    for(Video video:cart.getVideos()){
+      Order_item o = new Order_item();
+      o.setVideo_id(video.getId());
+      o.setPrice(video.getPrice());
+      o.setOrder_id(order.getId());
+      orderItemService.saveOrderItem(o);
+    }
+    cart = new Cart();
+    session.setAttribute("cart",cart);
     return new ModelAndView("redirect:/");
   }
 

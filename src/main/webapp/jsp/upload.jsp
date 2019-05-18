@@ -19,22 +19,7 @@
 
 <jsp:include page="navbar.jsp"/>
 
-<div class="border-bottom">
-    <div class="container ">
-        <c:if test="${not empty user}">
-            <div class="d-flex flex-row bg-white text-dark">
-                <div class="p-2 d-flex"><img class="img-fluid rounded d-flex center-vertically" style="height:60px; margin:auto;" src="<c:url value="/resources/avatar.png" />"/></div>
-                <div class="p-2 border-left">
-                    <div class="row">
-                        <div class="col-12">${user.username}</div>
-                        <div class="col-12">${user.firstname} ${user.lastname}</div>
-                        <div class="col-12">Cart (<c:if test="${cart!=null}">${cart.videos.size()}</c:if><c:if test="${cart==null}">0</c:if>)</div>
-                    </div>
-                </div>
-            </div>
-        </c:if>
-    </div>
-</div>
+<jsp:include page="user-bar.jsp"/>
 
 <div class="container bg-light p-3">
     <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data" >

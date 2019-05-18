@@ -40,7 +40,7 @@ public class OrderItemDaoImpl implements OrderItemDao {
 
   @Override
   public List<Order_item> getOrderItemsByOrder(Order order) {
-    String sql = "select * from orders where order_id='"+order.getId()+"'";
+    String sql = "select * from order_items where order_id='"+order.getId()+"'";
     List<Order_item> order_items = jdbcTemplate.query(sql, new OrderItemMapper());
     return order_items;
   }
@@ -49,6 +49,11 @@ public class OrderItemDaoImpl implements OrderItemDao {
     String sql = "select * from videos where id='"+order_item.getVideo_id()+"'";
     List<Video> videos = jdbcTemplate.query(sql, new VideoMapper());
     return videos.size()>0 ? videos.get(0):null;
+  }
+  @Override
+  public void saveOrderItem(Order_item item) {
+    String sql = "insert into order_items (video_id, price, order_id) values(?,?,?)";
+    jdbcTemplate.update(sql, new Object[]{item.getVideo_id(), item.getPrice(), item.getOrder_id()});
   }
 }
 

@@ -11,4 +11,5 @@ public interface OrderItemService {
   Order getOrder(Order_item order_item);
   List<Order_item> getOrderItemsByOrder(Order order);
   Video getVideoByOrderItem(Order_item order_item);
+  void saveOrderItem(Order_item item);
 }

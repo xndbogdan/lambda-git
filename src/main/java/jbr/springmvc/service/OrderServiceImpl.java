@@ -6,6 +6,7 @@ import jbr.springmvc.model.Order_item;
 import jbr.springmvc.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public class OrderServiceImpl implements OrderService {
@@ -41,4 +42,6 @@ public class OrderServiceImpl implements OrderService {
   @Override
   public List<Order> getOrdersByUser(User user) { return orderDao.getOrdersByUser(user);}
 
+  @Override
+  public Order getOrderByTimestamp(String uid, User u) { return orderDao.getOrderByTimestamp(uid,u); }
 }

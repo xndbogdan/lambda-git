@@ -14,4 +14,6 @@ public interface UserDao {
   User checkExistance(User user);
   User getUserById(int id);
   public List<Video> getBoughtTracks(User user);
+  public List<Video> getUploadedTracks(User user);
+  boolean userHasTrack(User user, Video video);
 }

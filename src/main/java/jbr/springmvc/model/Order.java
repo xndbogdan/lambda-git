@@ -6,6 +6,7 @@ public class Order {
   private int id;
   private int user_id;
   private Timestamp date;
+  private String uid;
 
   public int getUser_id() {
     return user_id;
@@ -29,4 +30,7 @@ public class Order {
   public int getId(){
     return id;
   }
+
+  public void setUid(String uid){ this.uid=uid; }
+  public String getUid() { return uid; }
 }

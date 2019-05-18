@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 8.0.15)
 # Database: LambdaSpring
-# Generation Time: 2019-05-14 21:17:34 +0000
+# Generation Time: 2019-05-18 19:55:37 +0000
 # ************************************************************
 
 
@@ -49,7 +49,7 @@ CREATE TABLE `order_items` (
                                KEY `order_id` (`order_id`),
                                CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`video_id`) REFERENCES `videos` (`id`),
                                CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 
@@ -62,10 +62,11 @@ CREATE TABLE `orders` (
                           `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT,
                           `user_id` bigint(11) NOT NULL,
                           `date` timestamp NOT NULL,
+                          `uid` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
                           PRIMARY KEY (`id`),
                           KEY `user_id` (`user_id`),
                           CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 
@@ -85,7 +86,7 @@ CREATE TABLE `users` (
                          `id` bigint(20) NOT NULL AUTO_INCREMENT,
                          `admin` tinyint(1) NOT NULL DEFAULT '0',
                          PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 
@@ -106,7 +107,7 @@ CREATE TABLE `videos` (
                           PRIMARY KEY (`id`),
                           KEY `FK_Videos_Users` (`User_id`),
                           CONSTRAINT `FK_Videos_Users` FOREIGN KEY (`User_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 

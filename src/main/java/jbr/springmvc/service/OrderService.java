@@ -4,6 +4,7 @@ import jbr.springmvc.model.Order;
 import jbr.springmvc.model.Order_item;
 import jbr.springmvc.model.User;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 public interface OrderService {
@@ -13,4 +14,5 @@ public interface OrderService {
   Double getPrice(Order order);
   List<Order_item> getItems(Order order);
   List<Order> getOrdersByUser(User user);
+  Order getOrderByTimestamp(String uid, User u);
 }
